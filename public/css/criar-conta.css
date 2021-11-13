@@ -1,0 +1,107 @@
+.card-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 90%;
+    border-radius: 6px;
+}
+
+.image-title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background: url("../assets/images/sign-up.png") no-repeat center center;
+    background-size: contain;
+    height: 500px;
+    width: 500px;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.image-title h1 {
+    color: white;
+    font-weight: 600;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    -webkit-user-drag: none;
+    font-size: 70px;
+}
+
+form {
+    padding: 20px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input-field {
+    padding: 15px;
+    width: 100%;
+    margin-right: 15px;
+}
+
+label {
+    font-size: 18px;
+}
+
+input {
+    border: 1px solid gainsboro;
+    padding: 10px;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+button {
+    color: white;
+    padding: 10px;
+    min-width: 107%;
+    border: none;
+    background-color: #536dfe;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+footer {
+    background-image: url(https://templatemo.com/templates/templatemo_570_chain_app_dev/assets/images/footer-bg.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 130px;
+    padding-top: 175px;
+    padding-bottom: 60px;
+    background-color: transparent;
+    color: transparent;
+}
+
+@media screen and (max-width: 1600px) {
+    footer {
+     display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .image-title {
+        display: none;
+    }
+
+    form {
+        max-width: 90%;
+        padding: 10px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 0px 3px 10px rgba(88, 88, 88, 0.1), 0px 16px 31px rgba(88, 88, 88, 0.1);
+    }
+}

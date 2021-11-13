@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CitiEye - Seja os olhos de sua cidade!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#occurances">Ocorrências</a></li>
+                <li><a href="/criar-ocorrencia.html">Nova Ocorrência</a></li>
+                <li><a href="/criar-conta.html">Cadastre-se</a></li>
+                <li><a href="/login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="slogan">
+            <div class="phrase">
+                <h1>CitiEye</h1>
+                <span>Seja os olhos de sua cidade!</span>
+                <span class="second-phrase">Encurtando a distância entre cidadãos e prefeitura.</span>
+                <a href="/criar-conta.html" class="join">Junte-se</a>
+            </div>
+           
+            <img class="logo-png" src="./assets/images/inicial-logo.png" alt="logo-inicial">
+        </div>
+
+
+        <hr />
+        <section class="posts" id="occurances">
+            <h2>Confira abaixo o que os munícipes estão falando:</h2>
+            <div class="loading"></div>
+            <span class="no-posts">Não há ocorrências a serem mostradas. Tente mais tarde. 😁</span>
+        </section>
+
+  
+
+    </main>
+
+    <footer>
+        <p>Developed with ❤ by CiTI</p>
+    </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./index.js" type="module"></script>
+
+</html>

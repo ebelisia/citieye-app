@@ -1,0 +1,13 @@
+{
+  "posts": [
+    {
+      "author": "Fulano de Tal",
+      "title": "Falta de sinalização da Avenida Rui Barbosa com a Rua Marechal Deodoro da Fonseca",
+      "profile_picture": "https://i.pinimg.com/736x/80/c7/9e/80c79eccd193b29d285f5d874ab37b0a.jpg",
+      "address": "Avenida Rui Barbosa, nº 765",
+      "place": "Bairro São Lucas",
+      "description": "Não há sinalização na travessa entre a Avenida Rui Barbosa e a Rua Marechal Deodoro da Fonseca, o que ocasiona inúmeros acidentes neste cruzamento e a prefeitura ainda não obteve nenhum tipo de providência.",
+      "id": 1
+    }
+  ]
+}

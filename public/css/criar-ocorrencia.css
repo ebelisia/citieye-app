@@ -1,0 +1,77 @@
+main {
+    margin: 20px auto;
+    max-width: 90%;
+}
+
+main:after{
+    position: absolute;
+    bottom: 28px;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://templatemo.com/templates/templatemo_570_chain_app_dev/assets/images/pro-table-bottom.png);
+    z-index: -1;
+    content: '';
+    width: 24%;
+    height: 181px;
+}
+
+form {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 8px;
+    box-shadow: 0px 3px 10px rgba(88, 88, 88, 0.1), 0px 16px 31px rgba(88, 88, 88, 0.1);
+}
+
+
+h3 {
+    font-size: 25px;
+}
+
+label {
+    font-size: 15px;
+}
+
+.input-field {
+    width: 90%;
+    padding: 2px;
+}
+
+input,
+textarea,
+select,
+option {
+    min-width: 100%;
+    border: 1px solid gainsboro;
+    height: 30px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    height: 75px;
+    resize: vertical;
+}
+
+button {
+    border: none;
+    margin: 10px auto;
+    padding: 5px;
+    cursor: pointer;
+    color: white;
+    width: 90%;
+    height: 40px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+button[type="submit"] {
+    background: rgb(62, 238, 39);
+}
+
+button[type="reset"] {
+    background: rgb(246, 53, 53);
+}

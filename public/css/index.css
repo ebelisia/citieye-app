@@ -1,0 +1,236 @@
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    20% {
+        transform: translateY(-6px);
+    }
+    40% {
+        transform: translateY(0px);
+    }
+
+    80% {
+        transform: translateY(-2px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes move {
+    from {
+        left: 0%;
+    }
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+main {
+    margin-bottom: 60px;
+    animation: up 3s;
+}
+
+.slogan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    flex-direction: row;
+}
+
+.slogan::after {
+    content: "";
+    background-image: url(https://templatemo.com/templates/templatemo_570_chain_app_dev/assets/images/services-left-dec.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    bottom: -300px;
+    width: 261px;
+    height: 368px;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.phrase {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.phrase a {
+    background-color: #536dfe;
+    font-weight: 700;
+    max-width: 200px;
+    border-radius: 60px;
+    color: #fff;
+    border: none;
+    padding: 20px;
+    margin-top: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.slogan h1 {
+    font-size: 63px;
+    margin: 0;
+}
+
+.slogan span {
+    font-size: 26px;
+}
+
+.second-phrase {
+    font-size: 18px !important;
+}
+
+.slogan .logo-png {
+    max-width: 800px;
+}
+
+hr {
+    height: 5px;
+    border-radius: 6px;
+    background-color: #536dfe;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.loading {
+    width: 50px;
+    height: 50px;
+
+    margin: auto;
+
+    border: 3px solid white;
+    border-top: 3px solid rgb(74, 223, 74);
+    border-radius: 50%;
+
+    animation: spin 1s linear infinite;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: transparent;
+}
+
+.posts h2 {
+    text-align: center;
+}
+
+.posts .post {
+    height: auto;
+    border: 1px solid #d3d3d3;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.post .user-information {
+    display: flex;
+    align-items: center;
+}
+
+.post img {
+    border-radius: 100px;
+    max-width: 65px;
+    max-height: 100px;
+}
+
+.post .name {
+    text-align: left;
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.post .live-in {
+    display: block;
+    margin-left: 20px;
+}
+
+.post .status {
+    height: 20px;
+    width: 20px;
+    background: green;
+}
+
+.post button {
+    height: 30px;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.share-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.facebook,
+.instagram,
+.whatsapp {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+}
+
+.whatsapp {
+    background-image: url("../assets/images/whatsapp.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.instagram {
+    background-image: url("../assets/images/instagram.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.facebook {
+    background-image: url("../assets/images/facebook.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.post .support {
+    position: absolute;
+    right: 10%;
+    background-image: url("../assets/images/support.png");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+}
+
+.post .share {
+    position: absolute;
+    right: 7%;
+    background-image: url("../assets/images/share.png");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .slogan {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
