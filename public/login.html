@@ -20,9 +20,9 @@
         <nav>
             <ul>
                 <li><a href="/index.html">Ocorrências</a></li>
-                <li><a href="/criar-ocorrencia.html">Nova Ocorrência</a></li>
-                <li><a href="/criar-conta.html">Cadastre-se</a></li>
-                <li><a href="/login.html">Login</a></li>
+                <li class="new-occurance is-hidden"><a href="/authenticated/criar-ocorrencia.html">Nova Ocorrência</a></li>
+                <li class="sign-up"><a href="/criar-conta.html">Cadastre-se</a></li>
+                <li class="login-btn"><a href="/login.html">Login</a></li>
             </ul>
         </nav>
     </header>
@@ -34,7 +34,7 @@
                 <h1>Acesso ao CitiEye</h1>
             </div>
 
-            <form action="/usuario/login" method="POST">
+            <form action="">
                 <div class="input-field">
                     <label for="email">E-mail:</label>
                     <input type="email" name="email" id="email" placeholder="📧 Seu email">
@@ -54,5 +54,6 @@
         <p>Developed with ❤ by CiTI</p>
     </footer>
 </body>
-
+    <script src="./login.js"></script>
+    <script src="./general.js"></script>
 </html>

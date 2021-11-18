@@ -1,13 +1,62 @@
 {
   "posts": [
     {
-      "author": "Fulano de Tal",
+      "author": "José da Silva",
       "title": "Falta de sinalização da Avenida Rui Barbosa com a Rua Marechal Deodoro da Fonseca",
-      "profile_picture": "https://i.pinimg.com/736x/80/c7/9e/80c79eccd193b29d285f5d874ab37b0a.jpg",
+      "profile_picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5wkJsgmcqircpp8mXAqWFe5qbu8Kkx_wjgvVQ7sT3h_v_n74okXgiDTCMeB3RJboMR4E&usqp=CAU",
       "address": "Avenida Rui Barbosa, nº 765",
       "place": "Bairro São Lucas",
+      "categories":{
+        "id": 5
+      },
       "description": "Não há sinalização na travessa entre a Avenida Rui Barbosa e a Rua Marechal Deodoro da Fonseca, o que ocasiona inúmeros acidentes neste cruzamento e a prefeitura ainda não obteve nenhum tipo de providência.",
       "id": 1
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Douglas Santos",
+      "email": "douglas.santos@citi.com.br",
+      "user": "douglas.santos"
+    },
+    {
+      "id": 2,
+      "name": "Eduardo Belísia",
+      "email": "eduardo.belisia@citi.com.br",
+      "user": "eduardo.belisia"
+    },
+    {
+      "id": 3,
+      "name": "Henrique Bastos",
+      "email": "henrique.bastos@citi.com.br",
+      "user": "henrique.bastos"
+    },
+    {
+      "id": 4,
+      "name": "Leonardo Batini",
+      "email": "leonardo.batini@citi.com.br",
+      "user": "leonardo.batini"
+    },
+    {
+      "id": 5,
+      "name": "Susana Nakasato",
+      "email": "susana.nakasato@citi.com.br",
+      "user": "susana.nakasato"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "title": "Reforma"
+    },
+    {
+      "id": 2,
+      "title": "Sinalização"
+    },
+    {
+      "id": 3,
+      "title": "Observaçao"
     }
   ]
 }

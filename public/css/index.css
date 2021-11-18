@@ -146,9 +146,8 @@ hr {
 }
 
 .post img {
-    border-radius: 100px;
     max-width: 65px;
-    max-height: 100px;
+    max-width: 65px;
 }
 
 .post .name {
@@ -208,6 +207,14 @@ hr {
     background-image: url("../assets/images/facebook.png");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.post .delete-post {
+    position: absolute;
+    right: 13%;
+    background-image: url("../assets/images/trash.png");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
 }
 
 .post .support {

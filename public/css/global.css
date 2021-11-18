@@ -9,6 +9,10 @@ body {
     scroll-behavior: smooth !important;
 }
 
+.is-hidden {
+    display: none;
+}
+
 main {
     max-width: 90%;
     margin: 0 auto;
@@ -33,7 +37,6 @@ nav ul a {
     color: #536dfe;
     font-weight: 600;
 }
-
 
 a:visited {
     color: #536dfe;
