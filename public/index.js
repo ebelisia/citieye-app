@@ -1,6 +1,7 @@
 //Requisitando os dados das postagens pela API
 const invoincingAPI = () => {
     $.ajax({
+        //Mudar para localhost:3000/posts caso for utilizar o json-server
         url: "http://localhost:8080/occurrences",
         method: "GET",
         header: {
