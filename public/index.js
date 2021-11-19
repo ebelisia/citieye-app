@@ -34,7 +34,7 @@ invoincingAPI();
 const mountDeleteButton = (user_local, owner_post) => {
     if (user_local == owner_post) {
         return `<button class="delete-post"></button>`
-    }else{
+    } else {
         return "";
     }
 }
@@ -43,7 +43,7 @@ const mountDeleteButton = (user_local, owner_post) => {
 const mountElements = (props) => {
     let $postsDiv = $(".posts");
     var jsonUser = localStorage.getItem('user');
-    var userLocalStorage = JSON.parse(jsonUser);
+    var userLocalStorage = "" || JSON.parse(jsonUser);
 
 
     props.forEach(item => {
@@ -53,7 +53,7 @@ const mountElements = (props) => {
 
         $postsDiv.append(`
             <article class="post" data-id="${id}">
-            ${mountDeleteButton(userLocalStorage.userName, author)}
+            ${jsonUser != null ? mountDeleteButton(userLocalStorage.userName, author) : ""}
             <button class="support"></button>
             <button class="share"></button>
                 <div class="user-information">
@@ -82,18 +82,34 @@ const mountElements = (props) => {
     $(".delete-post").on("click", function () {
         let id = $(this).parent().data("id");
 
-        $.ajax({
-            url: "http://localhost:8080/occurrences/" + id,
-            method: "DELETE",
-            success: function () {
-                Swal.fire({
-                    icon: 'success',
-                    title: 'Ótimo.',
-                    text: 'Ocorrência excluída com sucesso!',
-                }).then(() => { invoincingAPI(); })
+        Swal.fire({
+            title: 'Você tem certeza?',
+            text: "Ao confirmar, esta ocorrência será deletada.",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Sim, apagar!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                $.ajax({
+                    url: "http://localhost:8080/occurrences/" + id,
+                    method: "DELETE",
+                    success: function () {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Ótimo.',
+                            text: 'Ocorrência excluída com sucesso!',
+                        }).then(() => { invoincingAPI(); })
 
+                    }
+                })
             }
         })
+    })
+
+    $(".support").on("click", function(){
+        alert('APOIO')
     })
 
     $(".share").on("click", () => {

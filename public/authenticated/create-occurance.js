@@ -6,17 +6,17 @@ $("form").on("submit", (e) => {
     let $place = $("#locale").val();
     let $address = $("#address").val();
     let $description = $("#description").val();
-    let $category = $("#category").val();
+    let $category = $("#category :selected").data("id");
 
     //Cria o objeto de categoria
     let categoryObject = {
-        description: $category
+        id: $category
     }
 
     let postObject = {
         author: $user,
         title: $title,
-        profile_picture: "https://cdn.icon-icons.com/icons2/1378/PNG/512/avatardefault_92824.png",
+        profile_picture: "https://www.shareicon.net/data/512x512/2017/04/19/884537_blue_512x512.png",
         address: $address,
         place: $place,
         category: categoryObject,
