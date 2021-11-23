@@ -3,6 +3,8 @@ $("form").on("submit", (e) => {
     const usuario = JSON.parse(localStorage.getItem('user'))
     // let $user = usuario.userName;
     let $title = $("#title").val();
+    let $name = $("#name").val();
+    let $surname = $("#surname").val();
     let $local = $("#locale").val();
     let $address = $("#address").val();
     let $description = $("#description").val();
@@ -18,8 +20,14 @@ $("form").on("submit", (e) => {
         id: $city
     }
 
+    let userObject = {
+        name: $name,
+        surname: $surname
+    }
+
     let postObject = {
         title: $title,
+        user: userObject,
         // profile_picture: "https://www.shareicon.net/data/512x512/2017/04/19/884537_blue_512x512.png",
         address: $address,
         local: $local,
@@ -54,7 +62,6 @@ $("form").on("submit", (e) => {
         }
     })
 })
-
 let categoryList = $("#category");
 let cityList = $("#city");
 

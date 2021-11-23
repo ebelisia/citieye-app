@@ -33,8 +33,16 @@
         <div class="form-newPost">
             <form>
                 <div class="input-field">
-                    <label for="title">Título:*</label>
-                    <input type="text" name="title" id='title' required>
+                    <div class="input-field">
+                        <label for="title">Título:*</label>
+                        <input type="text" name="title" id='title' required>
+                    </div>
+                    <div class="input-field">
+                        <label for="name">Nome:*</label>
+                        <input type="text" name="name" id='name' required>
+                        <label for="name">Sobrenome:*</label>
+                        <input type="text" name="surname" id='surname' required>
+                    </div>
                 </div>
                 <div class="input-field">
                     <label for="locale">Local:</label>
@@ -46,12 +54,12 @@
                 </div>
                 <div class="input-field">
                     <label for="category">Categoria:*</label>
-                    <select id="category" name="category-list">
+                    <select id="category" name="category-list" value="Elétrica">
                     </select>
                 </div>
                 <div class="input-field">
                     <label for="city">City:*</label>
-                    <select id="city" name="city-list">
+                    <select id="city" name="city-list" value="São Paulo" >
                     </select>
                 </div>
                 <div class="input-field">
