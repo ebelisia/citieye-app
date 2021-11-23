@@ -55,7 +55,7 @@ const mountElements = (props) => {
             <button class="support"></button>
             <button class="share"></button>
                 <div class="user-information">
-                    <img src="https://s.conjur.com.br/img/b/joaquim-barbosa6.png" alt="foto de perfil">
+                    <img src="https://findicons.com/files/icons/977/rrze/720/user_real_person.png" alt="foto de perfil">
                     <div>
                         <span class="name">${user !== "" ? user.name + " " + user.surname : "Usuário Anônimo"}</span>
                         <span class="live-in"> Categoria: ${category.name}</span>
