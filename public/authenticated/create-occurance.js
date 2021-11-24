@@ -38,7 +38,8 @@ $("form").on("submit", (e) => {
 
     $.ajax({
         type: "POST",
-        url: "https://citieye.herokuapp.com/occurrences?userId=1",
+        // url: "https://citieye.herokuapp.com/occurrences?userId=1",
+        url: "http://localhost:5000/occurrences",
         contentType: "application/json; charset=utf-8",
         dataType: 'json',
         data: JSON.stringify(postObject),
@@ -66,7 +67,8 @@ let categoryList = $("#category");
 let cityList = $("#city");
 
 $.ajax({
-    url: "https://citieye.herokuapp.com/categories",
+    // url: "https://citieye.herokuapp.com/categories",
+    url: "http://localhost:5000/categories",
     method: "GET",
     header: {
         "Content-Type": "application/json"
@@ -79,7 +81,8 @@ $.ajax({
 })
 
 $.ajax({
-    url: "https://citieye.herokuapp.com/cities",
+    // url: "https://citieye.herokuapp.com/cities",
+    url: "http://localhost:5000/cities",
     method: "GET",
     header: {
         "Content-Type": "application/json"

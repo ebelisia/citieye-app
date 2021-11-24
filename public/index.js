@@ -2,7 +2,8 @@
 const invoincingAPI = () => {
     $.ajax({
         //Mudar para localhost:3000/posts caso for utilizar o json-server
-        url: "https://citieye.herokuapp.com/occurrences/all",
+        // url: "https://citieye.herokuapp.com/occurrences/all",
+        url: "http://localhost:5000/occurrences/all",
         method: "GET",
         header: {
             "Content-Type": "application/json"
@@ -30,6 +31,58 @@ const invoincingAPI = () => {
     });
 }
 
+let cityList = $("#city");
+
+const invoincingAPICity = () => {
+    $.ajax({
+        // url: "https://citieye.herokuapp.com/cities",
+        url: "http://localhost:5000/cities",
+        method: "GET",
+        header: {
+            "Content-Type": "application/json"
+        },
+        success: function (response) {
+            console.log(response)
+            response.forEach(item => {
+                cityList.append(`<option value="${item.name}" data-id="${item.id}">${item.name}</option>`)
+            })
+        }
+    })
+}
+
+$(".findCity").on("click", function (e) {
+    e.preventDefault();
+    findByCity();
+});
+
+const findByCity = () => {
+
+    let $city = $("#city :selected").data("id");
+
+    console.log($city)
+
+    $.ajax({
+        // url: "https://citieye.herokuapp.com/cities",
+        url: "http://localhost:5000/occurrences/city/" + $city,
+        method: "GET",
+        header: {
+            "Content-Type": "application/json"
+        },
+        success: function (response) {
+            setTimeout(() => {
+                $(".posts").children().remove();
+                mountElements(response);
+            }, 1000);
+            if (!response.length) {
+                alert("Não há ocorrências a serem mostradas. Tente mais tarde.");
+                return;
+            }
+            $(".no-posts").remove();
+        }
+    })
+}
+
+invoincingAPICity();
 invoincingAPI();
 
 // const mountDeleteButton = (user_local, owner_post) => {
@@ -89,7 +142,8 @@ const mountElements = (props) => {
         }).then((result) => {
             if (result.isConfirmed) {
                 $.ajax({
-                    url: "https://citieye.herokuapp.com/occurrences/" + id,
+                    url: "http://localhost:5000/occurrences/" + id,
+                    // url: "https://citieye.herokuapp.com/occurrences/" + id,
                     method: "DELETE",
                     success: function () {
                         Swal.fire({

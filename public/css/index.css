@@ -108,6 +108,37 @@ hr {
     border: none;
     margin-bottom: 10px;
 }
+.cities-search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#city {
+    min-height: 30px;
+    font-size: 16px;
+}
+
+.button-cities-select{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.findCity{
+    border: none;
+    background-color: #2ed533;
+    color: white;
+    border-radius: 10px;
+    height: 40px;
+    width: 120px;
+    font-size: 16px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.findCity:hover{
+    opacity: 0.8;
+}
 
 .loading {
     width: 50px;
