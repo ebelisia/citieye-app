@@ -2,8 +2,8 @@
 const invoincingAPI = () => {
     $.ajax({
         //Mudar para localhost:3000/posts caso for utilizar o json-server
-        // url: "https://citieye.herokuapp.com/occurrences/all",
-        url: "http://localhost:5000/occurrences/all",
+        url: "https://citieye.herokuapp.com/occurrences/all",
+        // url: "http://localhost:5000/occurrences/all",
         method: "GET",
         header: {
             "Content-Type": "application/json"
@@ -35,8 +35,8 @@ let cityList = $("#city");
 
 const invoincingAPICity = () => {
     $.ajax({
-        // url: "https://citieye.herokuapp.com/cities",
-        url: "http://localhost:5000/cities",
+        url: "https://citieye.herokuapp.com/cities",
+        // url: "http://localhost:5000/cities",
         method: "GET",
         header: {
             "Content-Type": "application/json"
@@ -62,8 +62,8 @@ const findByCity = () => {
     console.log($city)
 
     $.ajax({
-        // url: "https://citieye.herokuapp.com/cities",
-        url: "http://localhost:5000/occurrences/city/" + $city,
+        url: "https://citieye.herokuapp.com/cities" + $city,
+        // url: "http://localhost:5000/occurrences/city/" + $city,
         method: "GET",
         header: {
             "Content-Type": "application/json"
@@ -142,8 +142,8 @@ const mountElements = (props) => {
         }).then((result) => {
             if (result.isConfirmed) {
                 $.ajax({
-                    url: "http://localhost:5000/occurrences/" + id,
-                    // url: "https://citieye.herokuapp.com/occurrences/" + id,
+                    // url: "http://localhost:5000/occurrences/" + id,
+                    url: "https://citieye.herokuapp.com/occurrences/" + id,
                     method: "DELETE",
                     success: function () {
                         Swal.fire({
