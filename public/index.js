@@ -62,7 +62,7 @@ const findByCity = () => {
     console.log($city)
 
     $.ajax({
-        url: "https://citieye.herokuapp.com/cities" + $city,
+        url: "https://citieye.herokuapp.com//occurrences/city/" + $city,
         // url: "http://localhost:5000/occurrences/city/" + $city,
         method: "GET",
         header: {
