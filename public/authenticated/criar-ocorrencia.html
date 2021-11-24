@@ -17,65 +17,67 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/index.html">Ocorrências</a></li>
-                <li class="new-occurance is-hidden"><a href="/criar-ocorrencia.html">Nova Ocorrência</a></li>
-                <li class="sign-up"><a href="/criar-conta.html">Cadastre-se</a></li>
-                <li class="login-btn"><a href="/login.html">Login</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <nav>
+        <ul>
+            <li><a href="/index.html">Ocorrências</a></li>
+            <li class="new-occurance is-hidden"><a href="/criar-ocorrencia.html">Nova Ocorrência</a></li>
+            <li class="sign-up"><a href="/criar-conta.html">Cadastre-se</a></li>
+            <li class="login-btn"><a href="/login.html">Login</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <main>
-        <h3>Adicionar ocorrência</h3>
-        <div class="form-newPost">
-            <form>
-                <div class="input-field">
-                    <div class="input-field">
-                        <label for="title">Título:*</label>
-                        <input type="text" name="title" id='title' required>
-                    </div>
-                    <div class="input-field">
-                        <label for="name">Nome:*</label>
-                        <input type="text" name="name" id='name' required>
-                        <label for="name">Sobrenome:*</label>
-                        <input type="text" name="surname" id='surname' required>
-                    </div>
-                </div>
-                <div class="input-field">
-                    <label for="locale">Local:</label>
-                    <input type="text" name="locale" id='locale' required>
-                </div>
-                <div class="input-field">
-                    <label for="address">Endereço:</label>
-                    <input type="text" name="address" id='address' placeholder="Av. Paulista, nº 40">
-                </div>
-                <div class="input-field">
-                    <label for="category">Categoria:*</label>
-                    <select id="category" name="category-list" value="Elétrica">
-                    </select>
-                </div>
-                <div class="input-field">
-                    <label for="city">City:*</label>
-                    <select id="city" name="city-list" value="São Paulo" >
-                    </select>
-                </div>
-                <div class="input-field">
-                    <label for="description">Descrição:*</label>
-                    <textarea name="description" id="description" placeholder="Digite aqui" required></textarea>
-                </div>
-                <button type="submit">Adicionar</button>
-                <button type="reset">Cancelar</button>
-            </form>
-        </div>
-    </main>
+<main>
+    <h3>Adicionar ocorrência</h3>
+    <div class="form-newPost">
+        <form>
+            <div class="input-field">
+                <label for="title">Título:*</label>
+                <input type="text" name="title" id='title' required>
+            </div>
+            <div class="input-field">
+                <label for="name">Nome:*</label>
+                <input type="text" name="name" id='name' required>
+            </div>
+            <div class="input-field">
+                <label for="name">Sobrenome:*</label>
+                <input type="text" name="surname" id='surname' required>
+            </div>
 
-    <footer>
-        <p>Developed with ❤ by CiTI</p>
-    </footer>
-</body>]
+            <div class="input-field">
+                <label for="locale">Local:</label>
+                <input type="text" name="locale" id='locale' required>
+            </div>
+            <div class="input-field">
+                <label for="address">Endereço:</label>
+                <input type="text" name="address" id='address' placeholder="Av. Paulista, nº 40">
+            </div>
+            <div class="input-field">
+                <label for="category">Categoria:*</label>
+                <select id="category" name="category-list" value="Elétrica">
+                </select>
+            </div>
+            <div class="input-field">
+                <label for="city">City:*</label>
+                <select id="city" name="city-list" value="São Paulo">
+                </select>
+            </div>
+            <div class="input-field">
+                <label for="description">Descrição:*</label>
+                <textarea name="description" id="description" placeholder="Digite aqui" required></textarea>
+            </div>
+            <button type="submit">Adicionar</button>
+            <button type="reset">Cancelar</button>
+        </form>
+    </div>
+</main>
+
+<footer>
+    <p>Developed with ❤ by CiTI</p>
+</footer>
+</body>
+]
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="./create-occurance.js" type="module"></script>
 <script src="../general.js"></script>
